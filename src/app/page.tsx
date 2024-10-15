@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 interface Product {
+    _id: string;
     name: string;
     price: number;
     description: string;
@@ -38,7 +39,7 @@ export default function Home() {
             fetchProducts();
 
             setName("");
-            setPrice(0);
+            setPrice("");
             setDescription("");
             setImageURL("");
 
