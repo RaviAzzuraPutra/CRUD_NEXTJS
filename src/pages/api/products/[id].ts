@@ -1,5 +1,5 @@
-import connnectMongo from '../../../../lib/mongodb';
-import Product from '../../../../models/Products';
+import connnectMongo from '../../../lib/mongodb';
+import Product from '../../../models/Products';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
